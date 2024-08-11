@@ -15,7 +15,7 @@ use std::{
     str::FromStr,
 };
 
-use crate::{type_processor::TypeProcessor, AnalysisDriver};
+use crate::pil_analyzer::{type_processor::TypeProcessor, AnalysisDriver};
 
 /// The ExpressionProcessor turns parsed expressions into analyzed expressions.
 /// Its main job is to resolve references:

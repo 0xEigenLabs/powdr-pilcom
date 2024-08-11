@@ -13,7 +13,7 @@ use itertools::Either;
 use num_traits::One;
 use crate::parser_util::SourceRef;
 
-use crate::parsed::{
+use crate::ast::parsed::{
     asm::{
         AbsoluteSymbolPath, AssignmentRegister, CallableRef, FunctionParams, Instruction,
         MachineParams, OperationId, OperationParams,
@@ -23,7 +23,7 @@ use crate::parsed::{
     TypedExpression,
 };
 
-pub use crate::parsed::Expression;
+pub use crate::ast::parsed::Expression;
 
 #[derive(Clone, Debug)]
 pub struct RegisterDeclarationStatement {

@@ -14,7 +14,7 @@ use crate::ast::{
 };
 use crate::parser_util::{Error, SourceRef};
 
-use crate::{
+use crate::pil_analyzer::{
     call_graph::sort_called_first,
     type_builtins::{
         binary_operator_scheme, builtin_schemes, constr_function_statement_type,

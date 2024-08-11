@@ -2,7 +2,7 @@ use std::collections::BTreeMap;
 
 use crate::number::BigUint;
 
-use crate::parsed::{
+use crate::ast::parsed::{
     asm::{AbsoluteSymbolPath, CallableParams, OperationParams},
     EnumDeclaration, Expression, PilStatement, TypedExpression,
 };

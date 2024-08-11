@@ -1,7 +1,7 @@
 use crate::ast::parsed;
 use crate::number::{BigInt, GoldilocksField};
 
-use crate::{
+use crate::pil_analyzer::{
     evaluator::{self, EvalError},
     expression_processor::ExpressionProcessor,
     AnalysisDriver,

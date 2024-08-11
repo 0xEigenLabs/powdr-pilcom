@@ -10,7 +10,7 @@ use std::str::FromStr;
 
 use lazy_static::lazy_static;
 
-use crate::type_inference::ExpectedType;
+use crate::pil_analyzer::type_inference::ExpectedType;
 
 /// Returns the type used for a reference to a declaration.
 pub fn type_for_reference(declared: &Type) -> Type {

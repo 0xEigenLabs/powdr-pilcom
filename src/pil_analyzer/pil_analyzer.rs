@@ -22,12 +22,12 @@ use crate::ast::analyzed::{
 };
 use crate::parser::{parse, parse_module, parse_type};
 
-use crate::type_builtins::constr_function_statement_type;
-use crate::type_inference::infer_types;
-use crate::{side_effect_checker, AnalysisDriver};
+use crate::pil_analyzer::type_builtins::constr_function_statement_type;
+use crate::pil_analyzer::type_inference::infer_types;
+use crate::pil_analyzer::{side_effect_checker, AnalysisDriver};
 
-use crate::statement_processor::{Counters, PILItem, StatementProcessor};
-use crate::{condenser, evaluator, expression_processor::ExpressionProcessor};
+use crate::pil_analyzer::statement_processor::{Counters, PILItem, StatementProcessor};
+use crate::pil_analyzer::{condenser, evaluator, expression_processor::ExpressionProcessor};
 
 pub fn analyze_file<T: FieldElement>(path: &Path) -> Analyzed<T> {
     let files = import_all_dependencies(path);

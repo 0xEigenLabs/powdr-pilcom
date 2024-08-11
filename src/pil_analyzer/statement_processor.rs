@@ -20,10 +20,10 @@ use crate::ast::analyzed::{
     Symbol, SymbolKind,
 };
 
-use crate::type_processor::TypeProcessor;
-use crate::{untyped_evaluator, AnalysisDriver};
+use crate::pil_analyzer::type_processor::TypeProcessor;
+use crate::pil_analyzer::{untyped_evaluator, AnalysisDriver};
 
-use crate::expression_processor::ExpressionProcessor;
+use crate::pil_analyzer::expression_processor::ExpressionProcessor;
 
 pub enum PILItem {
     Definition(Symbol, Option<FunctionValueDefinition>),

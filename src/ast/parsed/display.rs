@@ -2,13 +2,13 @@ use std::fmt::{Display, Formatter, Result};
 
 use itertools::Itertools;
 
-use crate::{
+use crate::ast::{
     indent,
     parsed::{BinaryOperator, UnaryOperator},
     write_indented_by, write_items, write_items_indented,
 };
 
-use self::types::{ArrayType, FunctionType, TupleType, TypeBounds};
+use crate::ast::types::{ArrayType, FunctionType, TupleType, TypeBounds};
 
 use super::{asm::*, *};
 

@@ -12,7 +12,7 @@ use crate::parser_util::{Error, SourceRef};
 use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
 
-use crate::parsed::{BinaryOperation, BinaryOperator};
+use crate::ast::parsed::{BinaryOperation, BinaryOperator};
 
 use super::{
     visitor::Children, EnumDeclaration, EnumVariant, Expression, PilStatement, SourceReference,

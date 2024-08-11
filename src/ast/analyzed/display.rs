@@ -9,11 +9,11 @@ use std::{
 };
 
 use itertools::Itertools;
-use parsed::{display::format_type_args, LambdaExpression, TypedExpression};
+use crate::ast::parsed::{display::format_type_args, LambdaExpression, TypedExpression};
 
-use crate::{parsed::FunctionKind, writeln_indented, writeln_indented_by};
+use crate::ast::{parsed::FunctionKind, writeln_indented, writeln_indented_by};
 
-use self::parsed::{
+use crate::ast::parsed::{
     asm::{AbsoluteSymbolPath, SymbolPath},
     display::format_type_scheme_around_name,
 };

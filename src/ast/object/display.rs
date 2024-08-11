@@ -1,6 +1,6 @@
 use std::fmt::{Display, Formatter, Result};
 
-use crate::{
+use crate::ast::{
     asm_analysis::combine_flags,
     parsed::{display::format_type_scheme_around_name, TypedExpression},
 };

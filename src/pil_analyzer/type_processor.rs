@@ -3,7 +3,7 @@ use std::{collections::HashSet, str::FromStr};
 use crate::ast::parsed::{asm::SymbolPath, types::Type, visitor::Children, Expression};
 use crate::number::BigUint;
 
-use crate::{evaluator::EvalError, untyped_evaluator, AnalysisDriver};
+use crate::pil_analyzer::{evaluator::EvalError, untyped_evaluator, AnalysisDriver};
 
 /// The TypeProcessor turns parsed types into analyzed types, which means that
 /// it resolves local type name references, replaces named types that actually

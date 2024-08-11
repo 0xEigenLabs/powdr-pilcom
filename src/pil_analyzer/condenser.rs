@@ -25,7 +25,7 @@ use crate::ast::{
 use crate::number::{DegreeType, FieldElement};
 use crate::parser_util::SourceRef;
 
-use crate::{
+use crate::pil_analyzer::{
     evaluator::{self, Definitions, EvalError, SymbolLookup, Value},
     statement_processor::Counters,
 };

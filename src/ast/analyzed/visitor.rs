@@ -1,6 +1,6 @@
-use crate::parsed::visitor::VisitOrder;
+use crate::ast::parsed::visitor::VisitOrder;
 
-use self::parsed::visitor::AllChildren;
+use crate::ast::parsed::visitor::AllChildren;
 
 use super::*;
 

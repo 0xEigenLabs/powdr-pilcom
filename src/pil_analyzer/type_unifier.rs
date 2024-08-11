@@ -2,7 +2,7 @@ use std::collections::{HashMap, HashSet};
 
 use crate::ast::parsed::{types::Type, visitor::Children};
 
-use crate::type_builtins::elementary_type_bounds;
+use crate::pil_analyzer::type_builtins::elementary_type_bounds;
 
 // TODO Optimization ideas:
 // the substitutions are applied a lot.

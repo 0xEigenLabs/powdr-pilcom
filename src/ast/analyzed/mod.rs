@@ -15,11 +15,11 @@ use crate::parser_util::SourceRef;
 use schemars::JsonSchema;
 use serde::{Deserialize, Serialize};
 
-use crate::parsed::types::{ArrayType, Type, TypeBounds, TypeScheme};
-use crate::parsed::visitor::{Children, ExpressionVisitable};
-pub use crate::parsed::BinaryOperator;
-pub use crate::parsed::UnaryOperator;
-use crate::parsed::{
+use crate::ast::parsed::types::{ArrayType, Type, TypeBounds, TypeScheme};
+use crate::ast::parsed::visitor::{Children, ExpressionVisitable};
+pub use crate::ast::parsed::BinaryOperator;
+pub use crate::ast::parsed::UnaryOperator;
+use crate::ast::parsed::{
     self, ArrayLiteral, EnumDeclaration, EnumVariant, TraitDeclaration, TraitFunction,
 };
 

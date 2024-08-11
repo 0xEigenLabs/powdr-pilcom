@@ -1,6 +1,6 @@
 use crate::number::BigUint;
 
-use crate::parsed::{Expression, SourceReference};
+use crate::ast::parsed::{Expression, SourceReference};
 
 use super::{
     asm::{parse_absolute_path, Part, SymbolPath},
