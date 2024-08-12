@@ -1237,11 +1237,11 @@ pub fn evaluate_binary_operation_integer<'a, T>(
 
 #[cfg(test)]
 mod test {
-    use crate::evaluator;
+    use crate::pil_analyzer::evaluator;
     use crate::number::GoldilocksField;
     use pretty_assertions::assert_eq;
 
-    use crate::analyze_string;
+    use crate::pil_analyzer::pil_analyzer::analyze_string;
 
     use super::*;
 

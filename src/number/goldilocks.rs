@@ -596,7 +596,7 @@ impl Not for GLLargeInt {
 
 #[cfg(test)]
 mod test {
-    use crate::traits::int_from_hex_str;
+    use crate::number::traits::int_from_hex_str;
     use test_log::test;
 
     use super::*;

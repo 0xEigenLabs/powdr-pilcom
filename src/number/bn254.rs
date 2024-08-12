@@ -9,7 +9,7 @@ mod tests {
     use std::ops::*;
 
     use super::Bn254Field;
-    use crate::{traits::int_from_hex_str, FieldElement};
+    use crate::number::{traits::int_from_hex_str, FieldElement};
     use test_log::test;
 
     #[test]

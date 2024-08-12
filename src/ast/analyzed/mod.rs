@@ -1357,7 +1357,7 @@ impl Display for PolynomialType {
 mod tests {
     use crate::parser_util::SourceRef;
 
-    use crate::analyzed::{AlgebraicReference, PolyID, PolynomialType};
+    use crate::ast::analyzed::{AlgebraicReference, PolyID, PolynomialType};
 
     use super::{AlgebraicExpression, Analyzed};
 

@@ -301,7 +301,7 @@ impl Display for IncompatibleSet {
 #[cfg(test)]
 mod test {
     use super::*;
-    use crate::parsed::asm::parse_absolute_path;
+    use crate::ast::parsed::asm::parse_absolute_path;
     use pretty_assertions::assert_eq;
 
     #[test]
