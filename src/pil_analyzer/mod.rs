@@ -4,7 +4,7 @@ mod call_graph;
 mod condenser;
 pub mod evaluator;
 pub mod expression_processor;
-mod pil_analyzer;
+pub mod pil_analyzer;
 mod side_effect_checker;
 mod statement_processor;
 mod type_builtins;

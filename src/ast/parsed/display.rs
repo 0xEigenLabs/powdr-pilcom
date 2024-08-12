@@ -8,7 +8,8 @@ use crate::ast::{
     write_indented_by, write_items, write_items_indented,
 };
 
-use crate::ast::types::{ArrayType, FunctionType, TupleType, TypeBounds};
+//use crate::ast::types::{ArrayType, FunctionType, TupleType, TypeBounds};
+use self::types::{ArrayType, FunctionType, TupleType, TypeBounds};
 
 use super::{asm::*, *};
 

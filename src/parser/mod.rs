@@ -18,7 +18,7 @@ lalrpop_mod!(
     #[allow(clippy::all)]
     #[allow(clippy::uninlined_format_args)]
     pub powdr,
-    "/powdr.rs"
+    "/parser/powdr.rs"
 );
 
 pub struct ParserContext {

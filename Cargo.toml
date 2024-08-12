@@ -3,17 +3,24 @@ name = "powdr-pilcom"
 version = "0.1.0"
 edition = "2021"
 
-[lib]
-crate-type = ["cdylib", "rlib"]
+[[bin]]
+name = "pil2json"
+path = "src/cli/main.rs"
+
+#[lib]
+#crate-type = ["cdylib", "rlib"]
 
 [dependencies]
 itertools = "0.13"
 num-traits = "0.2.15"
 derive_more = "0.99.17"
 serde = { version = "1.0", default-features = false, features = ["alloc", "derive", "rc"] }
+
+serde_json = { version = "1.0", features = [ "arbitrary_precision" ] }
 schemars = { version = "0.8.16", features = ["preserve_order"]}
 serde_cbor = "0.11.2"
 auto_enums = "0.8.5"
+starky = { git = "https://github.com/0xEigenLabs/eigen-zkvm.git"}
 
 # number
 ark-bn254 = { version = "0.4.0", default-features = false, features = [
@@ -33,11 +40,18 @@ lalrpop-util = {version = "^0.19", features = ["lexer"]}
 # parser-util
 codespan-reporting = "^0.11"
 
+clap = { package = "clap", version = "4.3.4", features = ["derive"] }
+log = "0.4.0"
+env_logger = "0.10"
+
 [dev-dependencies]
 test-log = "0.2.12"
 pretty_assertions = "1.4.0"
 #powdr-pil-analyzer.workspace = true
 #powdr-parser.workspace = true
+
+[build-dependencies]
+lalrpop = "^0.19"
 
 
 [lints.clippy]

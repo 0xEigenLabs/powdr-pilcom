@@ -655,7 +655,7 @@ pub struct LabelStatement {
 #[derive(Clone, Debug)]
 pub struct DebugDirective {
     pub source: SourceRef,
-    pub directive: crate::parsed::asm::DebugDirective,
+    pub directive: crate::ast::parsed::asm::DebugDirective,
 }
 
 #[derive(Clone, Debug)]

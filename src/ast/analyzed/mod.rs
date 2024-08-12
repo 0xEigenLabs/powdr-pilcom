@@ -883,7 +883,7 @@ impl<T> SelectedExpressions<AlgebraicExpression<T>> {
 }
 
 pub type Expression = parsed::Expression<Reference>;
-pub type TypedExpression = crate::parsed::TypedExpression<Reference, u64>;
+pub type TypedExpression = crate::ast::parsed::TypedExpression<Reference, u64>;
 
 #[derive(Debug, Clone, Serialize, Deserialize, JsonSchema)]
 pub enum Reference {

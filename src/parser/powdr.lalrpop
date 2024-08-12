@@ -2,7 +2,7 @@ use std::str::FromStr;
 use std::collections::BTreeSet;
 use crate::ast::parsed::{*, asm::*, types::*};
 use crate::number::{BigInt, BigUint};
-use crate::{ParserContext, unescape_string};
+use crate::parser::{ParserContext, unescape_string};
 use crate::parser_util::Error;
 
 grammar(ctx: &ParserContext);

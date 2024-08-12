@@ -1,6 +1,6 @@
 macro_rules! powdr_field {
     ($name:ident, $ark_type:ty) => {
-        use crate::{
+        use crate::number::{
             traits::{FieldElement, KnownField, LargeInt},
             BigUint, DegreeType,
         };
@@ -26,8 +26,8 @@ macro_rules! powdr_field {
         )]
         pub struct $name {
             #[serde(
-                serialize_with = "crate::serialize::ark_se",
-                deserialize_with = "crate::serialize::ark_de"
+                serialize_with = "crate::number::serialize::ark_se",
+                deserialize_with = "crate::number::serialize::ark_de"
             )]
             #[schemars(skip)]
             value: $ark_type,
